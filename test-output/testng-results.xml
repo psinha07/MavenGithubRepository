@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="486" started-at="2021-03-24T19:43:00 IST" finished-at="2021-03-24T19:43:01 IST">
+  <suite name="Default suite" duration-ms="494" started-at="2021-03-24T19:49:11 IST" finished-at="2021-03-24T19:49:12 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="486" started-at="2021-03-24T19:43:00 IST" finished-at="2021-03-24T19:43:01 IST">
+    <test name="Default test" duration-ms="494" started-at="2021-03-24T19:49:11 IST" finished-at="2021-03-24T19:49:12 IST">
       <class name="MavFramework.PracticeClass">
-        <test-method status="PASS" signature="callExtent()[pri:0, instance:MavFramework.PracticeClass@3fd7a715]" name="callExtent" is-config="true" duration-ms="124" started-at="2021-03-24T19:43:00 IST" finished-at="2021-03-24T19:43:00 IST">
+        <test-method status="PASS" signature="callExtent()[pri:0, instance:MavFramework.PracticeClass@3fd7a715]" name="callExtent" is-config="true" duration-ms="144" started-at="2021-03-24T19:49:11 IST" finished-at="2021-03-24T19:49:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- callExtent -->
-        <test-method status="PASS" signature="launchBrowser()[pri:1, instance:MavFramework.PracticeClass@3fd7a715]" name="launchBrowser" duration-ms="14" started-at="2021-03-24T19:43:00 IST" finished-at="2021-03-24T19:43:00 IST">
+        <test-method status="PASS" signature="launchBrowser()[pri:1, instance:MavFramework.PracticeClass@3fd7a715]" name="launchBrowser" duration-ms="15" started-at="2021-03-24T19:49:12 IST" finished-at="2021-03-24T19:49:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="launchApplication()[pri:2, instance:MavFramework.PracticeClass@3fd7a715]" name="launchApplication" duration-ms="5" started-at="2021-03-24T19:43:00 IST" finished-at="2021-03-24T19:43:00 IST">
+        <test-method status="PASS" signature="launchApplication()[pri:2, instance:MavFramework.PracticeClass@3fd7a715]" name="launchApplication" duration-ms="4" started-at="2021-03-24T19:49:12 IST" finished-at="2021-03-24T19:49:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method status="PASS" signature="closeReport()[pri:0, instance:MavFramework.PracticeClass@3fd7a715]" name="closeReport" is-config="true" duration-ms="304" started-at="2021-03-24T19:43:00 IST" finished-at="2021-03-24T19:43:01 IST">
+        <test-method status="PASS" signature="closeReport()[pri:0, instance:MavFramework.PracticeClass@3fd7a715]" name="closeReport" is-config="true" duration-ms="294" started-at="2021-03-24T19:49:12 IST" finished-at="2021-03-24T19:49:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReport -->
