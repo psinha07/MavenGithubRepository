@@ -1,4 +1,4 @@
-package CommonLibrary;
+package commonLibrary;
 
 import java.util.TimeZone;
 import com.aventstack.extentreports.ExtentReports;
