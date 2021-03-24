@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="ListenerPackage.CustomListener"/>
+  </listeners>
+  <test thread-count="5" name="PracticeClass(failed)" parallel="methods">
+    <classes>
+      <class name="MavFramework.PracticeClass">
+        <methods>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- MavFramework.PracticeClass -->
+    </classes>
+  </test> <!-- PracticeClass(failed) -->
+</suite> <!-- Failed suite [Suite] -->
