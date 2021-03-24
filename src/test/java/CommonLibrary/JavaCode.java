@@ -1,4 +1,4 @@
-package CommonLibrary;
+package commonLibrary;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package ListenerPackage;
+package listenerPackage;
 
 import org.testng.ITestListener;
 import org.testng.ITestResult;

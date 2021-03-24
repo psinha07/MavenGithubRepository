@@ -1,4 +1,4 @@
-package MavFramework;
+package mavFramework;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -9,7 +9,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import CommonLibrary.ExtentReportClass;
+import commonLibrary.ExtentReportClass;
 
 
 public class PracticeClass {

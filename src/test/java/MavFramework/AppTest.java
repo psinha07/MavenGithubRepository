@@ -1,4 +1,4 @@
-package MavFramework;
+package mavFramework;
 
 import static org.junit.Assert.assertTrue;
 
