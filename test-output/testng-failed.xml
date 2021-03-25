@@ -6,8 +6,8 @@
       <class name="testPackage.TestSuite_One">
         <methods>
           <include name="closeReport"/>
-          <include name="testCaseDriver"/>
-          <include name="callExtent"/>
+          <include name="initializeTestEnvironment"/>
+          <include name="logOutTest"/>
         </methods>
       </class> <!-- testPackage.TestSuite_One -->
     </classes>
