@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13532" started-at="2021-03-24T21:47:52 IST" finished-at="2021-03-24T21:48:06 IST">
+  <suite name="Default suite" duration-ms="7985" started-at="2021-03-25T17:19:10 IST" finished-at="2021-03-25T17:19:18 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13532" started-at="2021-03-24T21:47:52 IST" finished-at="2021-03-24T21:48:06 IST">
-      <class name="testPage.TestSuite_One">
-        <test-method status="PASS" signature="callExtent()[pri:0, instance:testPage.TestSuite_One@26aa12dd]" name="callExtent" is-config="true" duration-ms="170" started-at="2021-03-24T21:47:52 IST" finished-at="2021-03-24T21:47:53 IST">
+    <test name="Default test" duration-ms="7985" started-at="2021-03-25T17:19:10 IST" finished-at="2021-03-25T17:19:18 IST">
+      <class name="testPackage.TestSuite_One">
+        <test-method status="PASS" signature="initializeTestEnvironment()[pri:0, instance:testPackage.TestSuite_One@3fd7a715]" name="initializeTestEnvironment" is-config="true" duration-ms="7418" started-at="2021-03-25T17:19:10 IST" finished-at="2021-03-25T17:19:17 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- callExtent -->
-        <test-method status="PASS" signature="testCaseDriver()[pri:1, instance:testPage.TestSuite_One@26aa12dd]" name="testCaseDriver" duration-ms="13321" started-at="2021-03-24T21:47:53 IST" finished-at="2021-03-24T21:48:06 IST">
+        </test-method> <!-- initializeTestEnvironment -->
+        <test-method status="PASS" signature="validLoginTest()[pri:1, instance:testPackage.TestSuite_One@3fd7a715]" name="validLoginTest" duration-ms="256" started-at="2021-03-25T17:19:17 IST" finished-at="2021-03-25T17:19:18 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCaseDriver -->
-      </class> <!-- testPage.TestSuite_One -->
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="closeReport()[pri:0, instance:testPackage.TestSuite_One@3fd7a715]" name="closeReport" is-config="true" duration-ms="268" started-at="2021-03-25T17:19:18 IST" finished-at="2021-03-25T17:19:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeReport -->
+      </class> <!-- testPackage.TestSuite_One -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
