@@ -52,6 +52,7 @@ public class TestSuite_One {
 	public void validLoginTest() {				
 		loginTest=extentReport.createTest("Test Login functionality");
 		LoginPage.validLogin(driver, uname, upassword, extentReport, loginTest);
+		/* DashboardPage.logOut(driver, extentReport, logOutTest); */
 	}
 	
 	@Test(priority=2, enabled= false)
@@ -61,7 +62,7 @@ public class TestSuite_One {
 	
 	@Test(priority=3, enabled= true)
 	public void logOutTest() {
-		logOutTest= extentReport.createTest("Test LogOut fucntionality");
+		logOutTest= extentReport.createTest("Test LogOut functionality");
 		DashboardPage.logOut(driver, extentReport, logOutTest);
 	}
 	
