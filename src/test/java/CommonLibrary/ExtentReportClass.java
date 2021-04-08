@@ -14,12 +14,13 @@ public class ExtentReportClass {
 	public static ExtentReports setUpExtentReport() {
 
 		String date= JavaCode.getDate();	
-		htmlReporter= new ExtentHtmlReporter("./ExtentReportRepository/"+date+"_SettingReport.html");
-		htmlReporter.config().setReportName("Practice Project Test Report");
+		htmlReporter= new ExtentHtmlReporter("./ExtentReportRepository/"+date+"_SellerPortal.html");
+		htmlReporter.config().setReportName("Practice Seller Portal QA Env. Test Report");
 		htmlReporter.config().setDocumentTitle("Custom Extent Report");
 		extentReport = new ExtentReports();
 		extentReport.attachReporter(htmlReporter);
 		TimeZone timeZone = JavaCode.getTimeZone();
+		extentReport.setSystemInfo("Test Environment", "QA");
 		extentReport.setSystemInfo("Time Zone", timeZone.getDisplayName());
 		extentReport.setSystemInfo("Computer Owner: ", "Pankaj Sinha");
 		return extentReport;
