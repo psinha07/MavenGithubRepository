@@ -9,6 +9,18 @@ import com.aventstack.extentreports.Status;
 
 public class DashboardPage {
 
+	public static void addNewProduct(WebDriver driver, ExtentReports extentReort, ExtentTest addNewProductTest) {
+		try {
+			Thread.sleep(5000);
+			driver.findElement(By.xpath("//*[text()='add']")).click();
+			System.out.println("Debug msg for add new product");
+			addNewProductTest.createNode("Verify that portal opens screen to add a product").log(Status.PASS, "Add a new product screen opened successfully");
+		}
+		catch (Exception e) {
+
+		}
+	}
+
 	public static void logOut(WebDriver driver, ExtentReports extentReort, ExtentTest logOutTest){
 		try {
 			//A click on Hamburger menu
@@ -22,8 +34,6 @@ public class DashboardPage {
 			driver.findElement(By.xpath("//span[contains(text(),'Yes')]")).click();
 			Thread.sleep(5000);
 			System.out.println("Logged out and back to Login page");
-
-			//if (driver.findElement(By.xpath("//h4[normalize-space()='Login']")).getText())
 			logOutTest.createNode("Verify that user logs out successfully").log(Status.PASS, "User logged out successfully");  
 		}
 		catch (Exception e) {

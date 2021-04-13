@@ -10,13 +10,14 @@ import com.aventstack.extentreports.ExtentTest;
 
 import commonLibrary.BaseSeleniumCode;
 import commonLibrary.ExtentReportClass;
+import testPage.AddProductPage;
 import testPage.DashboardPage;
 import testPage.LoginPage;
 
 public class TestSuite_One {
 
 	public static ExtentReports extentReport= null;
-	ExtentTest launchBrowserTest, launchAppTest, loginTest, logOutTest;
+	ExtentTest launchBrowserTest, launchAppTest, loginTest, logOutTest, addNewProductTest;
 
 	public static WebDriver driver;
 
@@ -54,21 +55,30 @@ public class TestSuite_One {
 		LoginPage.validLogin(driver, uname, upassword, extentReport, loginTest);
 		/* DashboardPage.logOut(driver, extentReport, logOutTest); */
 	}
-	
-	@Test(priority=2, enabled= false)
+
+	@Test(priority=0, enabled= false)
 	public void invalidLoginTest() {				
 		LoginPage.invalidLogin(driver, uname, "sinha", extentReport, loginTest);
 	}
-	
-	@Test(priority=3, enabled= true)
+
+	@Test(priority=2, enabled= true)
+	public void addNewProduct() {
+		addNewProductTest= extentReport.createTest("Test Add New Product");
+		DashboardPage.addNewProduct(driver, extentReport, addNewProductTest);
+		AddProductPage.addPackedProduct(driver, extentReport, addNewProductTest);
+	}
+
+
+	@Test(priority=3, enabled= false)
 	public void logOutTest() {
 		logOutTest= extentReport.createTest("Test LogOut functionality");
 		DashboardPage.logOut(driver, extentReport, logOutTest);
 	}
-	
+
 	@AfterTest
 	public static void closeReport() {
 		extentReport = ExtentReportClass.flushExtentReport();
+		//		driver.quit();
 	}
 }
 
