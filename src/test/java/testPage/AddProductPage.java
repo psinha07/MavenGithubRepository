@@ -27,6 +27,7 @@ public class AddProductPage {
 
 
 			driver.findElement(By.xpath("//input[@placeholder='Search Your Products']")).sendKeys("Tata");
+			addNewProductTest.createNode("Verify that TATA enters in Lookup Screen").log(Status.PASS,  "TATA entered successfully in the Lookup Screen");
 
 			List<WebElement> columns= driver.findElements(By.xpath("//table/thead/tr[1]/th"));
 			//Thread.sleep(5000);
@@ -68,15 +69,16 @@ public class AddProductPage {
 
 					//Below R&D
 
-					yourPrice.sendKeys("51");
+					yourPrice.sendKeys("48");
 					//act.moveToElement(driver.findElement(By.xpath("//input[starts-with(@class, 'mat-input-element mat-form-field-autofill-control price-input')][@ng-reflect-disabled='false']"))).sendKeys("70").build().perform();
-
+					addNewProductTest.createNode("Verify that Price enters in Your Price field").log(Status.PASS,  "Price entered in Your Price field successfully");
 					Thread.sleep(3000);
 					System.out.println("After entering price");
 					break;
 				}
 			}			
 			driver.findElement(By.xpath("//button[normalize-space()='Add to listing']")).click();
+			addNewProductTest.createNode("Verify a Product is finally added to the Product List").log(Status.PASS, "A Product was successfully added to the Product List");
 		}
 		catch (Exception e) {
 			e.printStackTrace();

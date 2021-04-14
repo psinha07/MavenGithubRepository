@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22953" started-at="2021-04-14T20:22:36 IST" finished-at="2021-04-14T20:22:59 IST">
+  <suite name="Default suite" duration-ms="20481" started-at="2021-04-14T20:54:28 IST" finished-at="2021-04-14T20:54:49 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22953" started-at="2021-04-14T20:22:36 IST" finished-at="2021-04-14T20:22:59 IST">
+    <test name="Default test" duration-ms="20481" started-at="2021-04-14T20:54:28 IST" finished-at="2021-04-14T20:54:49 IST">
       <class name="testPackage.TestSuite_One">
-        <test-method status="PASS" signature="initializeTestEnvironment()[pri:0, instance:testPackage.TestSuite_One@3fd7a715]" name="initializeTestEnvironment" is-config="true" duration-ms="12395" started-at="2021-04-14T20:22:36 IST" finished-at="2021-04-14T20:22:48 IST">
+        <test-method status="PASS" signature="initializeTestEnvironment()[pri:0, instance:testPackage.TestSuite_One@3fd7a715]" name="initializeTestEnvironment" is-config="true" duration-ms="10001" started-at="2021-04-14T20:54:28 IST" finished-at="2021-04-14T20:54:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTestEnvironment -->
-        <test-method status="PASS" signature="validLoginTest()[pri:1, instance:testPackage.TestSuite_One@3fd7a715]" name="validLoginTest" duration-ms="294" started-at="2021-04-14T20:22:48 IST" finished-at="2021-04-14T20:22:49 IST">
+        <test-method status="PASS" signature="validLoginTest()[pri:1, instance:testPackage.TestSuite_One@3fd7a715]" name="validLoginTest" duration-ms="317" started-at="2021-04-14T20:54:38 IST" finished-at="2021-04-14T20:54:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="addNewProduct()[pri:2, instance:testPackage.TestSuite_One@3fd7a715]" name="addNewProduct" duration-ms="9934" started-at="2021-04-14T20:22:49 IST" finished-at="2021-04-14T20:22:59 IST">
+        <test-method status="PASS" signature="addNewProduct()[pri:2, instance:testPackage.TestSuite_One@3fd7a715]" name="addNewProduct" duration-ms="9851" started-at="2021-04-14T20:54:39 IST" finished-at="2021-04-14T20:54:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewProduct -->
-        <test-method status="PASS" signature="closeReport()[pri:0, instance:testPackage.TestSuite_One@3fd7a715]" name="closeReport" is-config="true" duration-ms="285" started-at="2021-04-14T20:22:59 IST" finished-at="2021-04-14T20:22:59 IST">
+        <test-method status="PASS" signature="closeReport()[pri:0, instance:testPackage.TestSuite_One@3fd7a715]" name="closeReport" is-config="true" duration-ms="269" started-at="2021-04-14T20:54:48 IST" finished-at="2021-04-14T20:54:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReport -->
