@@ -1,5 +1,6 @@
 package testPage;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -82,6 +83,47 @@ public class AddProductPage {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
+		}
+	}
+
+	public static void addNewProductByFilter(WebDriver driver, ExtentReports extentReport, ExtentTest addNewProuctTest) {
+		driver.findElement(By.xpath("//input[@placeholder='Select Brand']")).click();
+		System.out.println("Clicked on Brand drop down");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		List<WebElement> brandList= driver.findElements(By.xpath("//table/tbody[@role='rowgroup']/tr"));
+		System.out.println("Size of brandList is: "+brandList.size());
+
+		List<WebElement> columnElement= driver.findElements(By.xpath("//table/tbody/tr[1]/td"));
+		int colSize= columnElement.size();
+		System.out.println("No. of columns is: "+colSize);
+
+		List<WebElement> rowElement= driver.findElements(By.xpath("//table/tbody/tr/td[1]"));
+		int rowSize= rowElement.size();
+		System.out.println("No. of row is: "+rowSize);
+
+		int i=0;
+		Iterator<WebElement> itr= brandList.iterator();
+
+		while(itr.hasNext()) {
+			i++;
+			String brandName= itr.next().getText();
+			System.out.println(i+". Brand Name is: "+brandName);
+			if(brandName.equalsIgnoreCase("Amul22")) {
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				WebElement element= driver.findElement(By.xpath("//table/tbody/tr["+i+"]"+"/td[1]"));
+				
+				//Center yourPrice for interaction
+				JavascriptExecutor js = (JavascriptExecutor)driver;					
+				js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'})", element);
+				//Scroll yourPrice into view for interactions
+				JavascriptExecutor je = (JavascriptExecutor)driver;
+				je.executeScript("arguments[0].scrollIntoView(true);", element);
+				
+				//driver.findElement(By.xpath("//table/tbody/tr["+i+"]"+"/td[1]")).click();
+				element.click();
+				addNewProuctTest.createNode("Verify that Brand is selected from the Drop-down").log(Status.PASS, "Brand has been selected successfully");
+				break;
+			}
 		}
 	}
 }

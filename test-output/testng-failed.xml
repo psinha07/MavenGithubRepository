@@ -7,7 +7,7 @@
         <methods>
           <include name="closeReport"/>
           <include name="initializeTestEnvironment"/>
-          <include name="logOutTest"/>
+          <include name="addNewProductByFilter"/>
         </methods>
       </class> <!-- testPackage.TestSuite_One -->
     </classes>

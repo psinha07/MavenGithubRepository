@@ -61,13 +61,19 @@ public class TestSuite_One {
 		LoginPage.invalidLogin(driver, uname, "sinha", extentReport, loginTest);
 	}
 
-	@Test(priority=2, enabled= true)
+	@Test(priority=2, enabled= false)
 	public void addNewProduct() {
 		addNewProductTest= extentReport.createTest("Test Add New Product");
 		DashboardPage.addNewProduct(driver, extentReport, addNewProductTest);
 		AddProductPage.addPackedProduct(driver, extentReport, addNewProductTest);
 	}
 
+	@Test(priority=2, enabled= true)
+	public void addNewProductByFilter() {
+		addNewProductTest= extentReport.createTest("Test Add New Product By Filter");
+		DashboardPage.addNewProduct(driver, extentReport, addNewProductTest);
+		AddProductPage.addNewProductByFilter(driver, extentReport, addNewProductTest);
+	}
 
 	@Test(priority=3, enabled= false)
 	public void logOutTest() {

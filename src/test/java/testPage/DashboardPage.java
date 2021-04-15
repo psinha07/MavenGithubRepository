@@ -13,7 +13,6 @@ public class DashboardPage {
 		try {
 			Thread.sleep(5000);
 			driver.findElement(By.xpath("//*[text()='add']")).click();
-			System.out.println("Debug msg for add new product");
 			addNewProductTest.createNode("Verify that portal opens screen to add a product").log(Status.PASS, "Add a new product screen opened successfully");
 		}
 		catch (Exception e) {
