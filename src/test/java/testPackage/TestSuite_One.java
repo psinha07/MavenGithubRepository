@@ -49,7 +49,8 @@ public class TestSuite_One {
 		}
 	}
 
-	@Test(priority=1, enabled= true)
+//	@Test(priority=1, enabled= true)
+	@Test(alwaysRun = true)
 	public void validLoginTest() {				
 		loginTest=extentReport.createTest("Test Login functionality");
 		LoginPage.validLogin(driver, uname, upassword, extentReport, loginTest);
@@ -63,18 +64,22 @@ public class TestSuite_One {
 
 	@Test(priority=2, enabled= false)
 	public void addNewProduct() {
-		addNewProductTest= extentReport.createTest("Test Add New Product");
+		addNewProductTest= extentReport.createTest("Test Packed Product Addition using Lookup Feature");
 		DashboardPage.addNewProduct(driver, extentReport, addNewProductTest);
 		AddProductPage.addPackedProduct(driver, extentReport, addNewProductTest);
 	}
 
 	@Test(priority=2, enabled= true)
 	public void addNewProductByFilter() {
-		addNewProductTest= extentReport.createTest("Test Add New Product By Filter");
+		addNewProductTest= extentReport.createTest("Test Packed Product Addition using Filter Feature");
 		DashboardPage.addNewProduct(driver, extentReport, addNewProductTest);
-		AddProductPage.addNewProductByFilter(driver, extentReport, addNewProductTest);
+		AddProductPage.addBrandByFilter(driver, extentReport, addNewProductTest);
+		AddProductPage.selectCategory(driver, extentReport, addNewProductTest);
+		AddProductPage.selectSubCategory(driver, extentReport, addNewProductTest);
+		AddProductPage.selectProduct(driver, extentReport, addNewProductTest);
+		
 	}
-
+	
 	@Test(priority=3, enabled= false)
 	public void logOutTest() {
 		logOutTest= extentReport.createTest("Test LogOut functionality");
@@ -87,5 +92,3 @@ public class TestSuite_One {
 		//		driver.quit();
 	}
 }
-
-

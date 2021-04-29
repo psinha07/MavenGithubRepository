@@ -52,7 +52,7 @@
 			<version>3.141.59</version>
 		</dependency>
 
-
+		<!-- https://mvnrepository.com/artifact/org.atmosphere.client/javascript -->
 
 	</dependencies>
 
