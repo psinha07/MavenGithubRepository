@@ -9,9 +9,16 @@
 		<classes>
 			<class name="MavFramework.PracticeClass">
 				<methods>
-					<include name="launchBrowser"/>
-					<include name="launchApplication"/>
+					<include name="launchBrowser" />
+					<include name="launchApplication" />
 				</methods>
+			</class>
+
+			<class name="testNGPracticePackage.DataProviderPractice">
+				<methods>
+					<include name="getDatafromDataProvider" />
+				</methods>
+
 			</class>
 		</classes>
 	</test> <!-- PracticeClass -->

@@ -292,4 +292,7 @@ public class AddProductPage {
 			e.printStackTrace();
 		}
 	}
+	
+	//Add Loose Product
+	
 }
