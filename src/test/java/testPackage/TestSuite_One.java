@@ -28,6 +28,7 @@ public class TestSuite_One {
 
 	@BeforeTest
 	public void initializeTestEnvironment() {
+		System.out.println("Pankaj Started");
 		extentReport= ExtentReportClass.setUpExtentReport();
 		if (browsername.equalsIgnoreCase("Chrome")) {
 			launchBrowserTest= extentReport.createTest("Launch Browser");
