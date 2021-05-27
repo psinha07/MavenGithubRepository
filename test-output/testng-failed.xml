@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGPracticePackage.TestNGDataProvider">
+      <class name="testPage.WindowHandling">
         <methods>
-          <include name="getData"/>
+          <include name="startUp"/>
+          <include name="tearDown"/>
+          <include name="manageWindow"/>
         </methods>
-      </class> <!-- testNGPracticePackage.TestNGDataProvider -->
+      </class> <!-- testPage.WindowHandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

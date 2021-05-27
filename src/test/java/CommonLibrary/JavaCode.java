@@ -20,4 +20,6 @@ public class JavaCode {
 		String strDate = formatter.format(date);
 		return strDate;
 	}
+	
+	
 }

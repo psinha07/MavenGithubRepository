@@ -14,9 +14,10 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class TestNGDataProvider {
 
 	public static void main(String[] args) {
-		DataReader drObject = new DataReader();
+
+		DataReader drObject = new DataReader(); 
 		drObject.readData();
-		drObject.iteratealObject();
+		// drObject.iteratealObject();
 	}			
 }
 
@@ -27,6 +28,7 @@ class DataReader{
 	XSSFSheet ws= null;
 	ArrayList<String> alObject= null;
 	ArrayList<String> alObject2= null;
+
 	public void readData() {
 		try {
 			File fileName = new File ("./DataFile/TestNGDataFile.xlsx");
@@ -34,12 +36,9 @@ class DataReader{
 
 			wb = new XSSFWorkbook(fis);
 			ws = wb.getSheetAt(0);
-
-			int rowCount = ws.getLastRowNum();
-			System.out.println("Row count is: "+rowCount);
-			int colCount = ws.getRow(0).getLastCellNum();
-			System.out.println("Column count is: "+colCount);
-
+			int rowCount = ws.getLastRowNum(); // gives total row count
+			int colCount = ws.getRow(0).getLastCellNum(); // gives total column count
+			
 			Iterator<Row> rowItr = ws.iterator();
 			alObject = new ArrayList<String>();
 			while(rowItr.hasNext()) {
@@ -60,7 +59,7 @@ class DataReader{
 		}
 		catch(Exception e) {
 			e.printStackTrace();
-		}		
+		}	
 	}
 	public void iteratealObject() {
 		int rowCount = ws.getLastRowNum();
